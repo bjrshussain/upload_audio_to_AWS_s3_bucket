@@ -1,7 +1,7 @@
 const AWS = require('aws-sdk');
 const s3 = new AWS.S3({
     accessKeyId: process.env.access_key,
-    secretAccessKey: process.env.secret_access_key
+    secretAccessKey: process.env.secret_access_key,
 })
 
 const uploadAudio = (filename, bucketname, file) => {
