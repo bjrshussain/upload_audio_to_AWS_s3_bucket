@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-// uplaods post route
+// uplaods post route. posts to s3 bucket
 app.post('/upload', upload.single('audiofile'), async (req, res) => {
     const filename = 'hussainhussain';
     const bucketname = 'octoberbuokett';
